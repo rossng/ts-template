@@ -1,0 +1,17 @@
+{
+    "files": [],
+    "references": [
+        {
+            "path": "./packages/ast/tsconfig.json"
+        },
+        {
+            "path": "./packages/parser/tsconfig.json"
+        },
+        {
+            "path": "./packages/player/tsconfig.json"
+        },
+        {
+            "path": "./packages/tone-library/tsconfig.json"
+        }
+    ]
+}

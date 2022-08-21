@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "es2021",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "lib": ["dom", "es2021"],
+        "declaration": true,
+        "sourceMap": true,
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noImplicitAny": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "jsx": "react",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "downlevelIteration": true,
+        "declarationMap": true
+    },
+    "exclude": ["node_modules"],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "NodeNext",
+            "resolveJsonModule": true,
+            "noImplicitAny": false
+        }
+    }
+}

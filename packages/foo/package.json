@@ -1,0 +1,41 @@
+{
+    "name": "@ts-template/foo",
+    "version": "1.0.0",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rossng/ts-template.git",
+        "directory": "packages/foo"
+    },
+    "author": "Ross Gardiner",
+    "license": "BlueOak-1.0.0",
+    "bugs": {
+        "url": "https://github.com/rossng/ts-template/issues"
+    },
+    "homepage": "https://github.com/rossng/ts-template#readme",
+    "scripts": {
+        "build": "tsc --build",
+        "clean": "tsc --build --clean",
+        "preinstall": "npx -y only-allow pnpm"
+    },
+    "files": [
+        "dist"
+    ],
+    "module": "./dist/index.js",
+    "exports": {
+        ".": "./dist/index.js",
+        "./*": "./dist/*.js"
+    },
+    "types": "./dist/index.d.ts",
+    "typesVersions": {
+        "*": {
+            "./*": [
+                "dist/*.js"
+            ]
+        }
+    },
+    "engines": {
+        "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+    },
+    "devDependencies": {}
+}
